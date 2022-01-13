@@ -12,21 +12,22 @@ namespace SelectionStatements
             //If-Else Statements part of exercise
 
             Console.WriteLine("What is my favorite number?");
-            var r = new Random();
-            var favNumber = r.Next(1,1000);
+            var theNum = 17;
+            //var r = new Random();
+            //var favNumber = r.Next(1,10);
             var userInput = int.Parse(Console.ReadLine());
 
-            if (userInput < favNumber)
+            if (userInput < theNum)
             {
                 Console.WriteLine("too low");
             }
-            else if (userInput > favNumber)
+            else if (userInput > theNum)
             {
                 Console.WriteLine("too high");
             }
-            else
+            else if (userInput == theNum)
             {
-                Console.WriteLine("SAME!");
+                Console.WriteLine("You nailed !");
             }
 
         }
